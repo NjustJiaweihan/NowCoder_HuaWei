@@ -29,12 +29,14 @@ public class Main
                 //j=id*2-i   j到id的距离=id-j=i-id
                 if(i <= right)
                 {
-                    r = Math.min(rad[i]-id+i, rad[2*id-i]);
+                    r = Math.min(rad[id]-id+i, rad[2*id-i]);
                 }
+                //i-r不出左边界 i+r不出右边界 再拓展r
                 while (i-r>=0 && i+r<newStr.length() && newStr.charAt(i-r)==newStr.charAt(i+r))
                 {
                     r++;
                 }
+                //TODO 为何是i的右边界超了id右边界 更新right和id
                 if(i+r-1 > right)
                 {
                     right = i+r-1;
