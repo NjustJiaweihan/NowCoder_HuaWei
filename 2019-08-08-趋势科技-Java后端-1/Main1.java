@@ -2,7 +2,7 @@ package cn.deepblog;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main1 {
     private static String add(String num1, String num2)
     {
         String res;
