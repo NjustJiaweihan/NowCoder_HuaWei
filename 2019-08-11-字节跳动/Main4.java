@@ -40,6 +40,7 @@ public class Main4 {
             dfs(w, adj, marked, cnt, lens);
         }
 
+        //没来得及取%
         System.out.println(lens);
 
     }
