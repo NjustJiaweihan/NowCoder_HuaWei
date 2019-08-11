@@ -56,6 +56,8 @@ public class Main4 {
             }
         }
 
-        lens.add(cnt);
+        for(int i=1; i<=cnt; i++){
+            lens.add(i);
+        }
     }
 }
